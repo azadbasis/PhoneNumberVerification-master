@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context="com.sadi.smsdirection.Activity.Activity_Register">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/callServiceLo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#8ee3e6"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginLeft="18dp"
+            android:text="VERIFY"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+        <Switch
+            android:id="@+id/emergencyCallSws"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2" />
+
+
+    </LinearLayout>
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/ePhoneNumberEt"
+        android:layout_width="250dp"
+        android:onClick="verifyUserPhone"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ePhoneNumberEts"
+            android:hint="Phone Number"
+            android:letterSpacing="0.1"
+            android:inputType="phone"
+            android:onClick="verifyUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="#00000000"
+
+            android:textColor="#243c4b"
+            android:textColorHint="#9E9EAA"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.001dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#5B5B65"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleContentDescription="your pass word"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:letterSpacing="0.1"
+            android:textColor="#243c4b"
+            android:textColorHint="#9E9EAA"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.001dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#5B5B65"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sensibility :"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/sensibilitySps"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+
+            android:background="@drawable/spinner_border"
+            android:entries="@array/sensibility" />
+
+    </LinearLayout>
+</LinearLayout>
