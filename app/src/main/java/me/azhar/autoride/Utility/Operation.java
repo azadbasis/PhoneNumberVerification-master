@@ -1,4 +1,4 @@
-package com.sadi.smsdirection;
+package me.azhar.autoride.Utility;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
  * Created by NanoSoft on 12/13/2017.
  */
 
-public class Operations {
+public class Operation {
 
 
 

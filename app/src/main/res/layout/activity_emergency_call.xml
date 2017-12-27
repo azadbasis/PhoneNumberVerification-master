@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="@dimen/_10sdp"
-    tools:context="com.sadi.smsdirection.Activity.Activity_Register">
+    tools:context="com.sadi.autoride.me.sadi.autoride.Activity.Activity_Register">
 
 
 

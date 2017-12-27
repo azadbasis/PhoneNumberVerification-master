@@ -1,4 +1,4 @@
-package com.sadi.smsdirection;
+package me.azhar.autoride;
 
 import org.junit.Test;
 

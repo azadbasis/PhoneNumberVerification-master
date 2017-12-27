@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sadi.smsdirection">
+    package="me.azhar.autoride">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
     <application
         android:allowBackup="true"
@@ -19,7 +16,7 @@
         android:roundIcon="@mipmap/ic_car_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Activity_Register">
+        <activity android:name="me.azhar.autoride.Activity.Activity_Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +25,7 @@
         </activity>
 
         <receiver
-            android:name=".emergency.SmsReceiver"
+            android:name="me.azhar.autoride.BroadcastReceiver.SmsReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -38,7 +35,8 @@
 
         <!-- <activity android:name=".SendEmail"></activity> -->
 
-        <activity android:name=".Activity.Activity_SignIn"></activity>
+        <activity android:name="me.azhar.autoride.Activity.Activity_SignIn" />
+        <activity android:name="me.azhar.autoride.Activity.Activity_Welcome"></activity>
     </application>
 
 </manifest>
